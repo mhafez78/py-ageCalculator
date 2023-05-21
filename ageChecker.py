@@ -19,30 +19,22 @@ def calculateAge(born):
         return today.year - born.year
          
 # Driver code
-
 euyy = input('Year of Birth (xxxx): ')
 euyy = int(euyy)
-
 eumm= input('Enter Month of Birth (xx): ')
 eumm = int(eumm)
-
 eudd = input("Enter Day of Birth (xx): ")
 eudd = int(eudd)
 
-
-
-
 print("You are ", calculateAge(date(euyy, eumm, eudd)), "years")
-
 
 def canBuyCigsOrAlcohol():
     eu_age = calculateAge(date(euyy, eumm, eudd))
     if eu_age > 18:
-        answer = 'you can buy cigs'
+        answer = 'Your customer can buy cigs'
     if eu_age > 21:
-        answer = 'you can buy cigs and alcohol'
-    else: answer = "you cannot buy either cigs nor alcohol"
-    
+        answer = 'Your customer can buy cigs and alcohol'
+    else: answer = "Your customer is under age cannot buy either cigs nor alcohol"    
     return answer
 
 print(canBuyCigsOrAlcohol())
